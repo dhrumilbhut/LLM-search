@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+psycopg2-binary
+sqlalchemy
+pydantic
+python-dotenv
+pgvector
+
+openai
+
+mlflow
+apache-airflow
+
+numpy
+pandas
