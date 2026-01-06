@@ -1,0 +1,7 @@
+RAG_CONFIG = {
+    "embedding_model": "text-embedding-3-small",
+    "chunk_size": 500,
+    "top_k": 5,
+    "llm_model": "gpt-4o-mini",
+    "temperature": 0.2
+}

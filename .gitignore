@@ -43,3 +43,17 @@ data/
 # Airflow
 airflow/logs/
 airflow/airflow.db
+airflow.cfg
+airflow.db
+airflow-webserver.pid
+standalone_admin_password.txt
+~/airflow/
+
+# MLflow
+mlruns/
+mlartifacts/
+mlflow.db
+
+# Docker
+*.env.docker
+docker-compose.override.yml

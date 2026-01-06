@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 from app.ml.vector_search import semantic_search
+from app.pipelines.rag_pipeline import rag_answer
 
 router = APIRouter()
 
@@ -14,3 +15,8 @@ def search(query: str, limit: int = 5):
         }
         for r in results
     ]
+
+@router.get("/ask")
+def ask(query: str):
+    answer = rag_answer(query)
+    return {"answer": answer}
