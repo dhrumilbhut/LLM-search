@@ -1,6 +1,7 @@
+from typing import List
 from app.ml.vector_search import semantic_search
 
-def evaluate_retrieval(query: str, expected_keywords: list[str]) -> float:
+def evaluate_retrieval(query: str, expected_keywords: List[str]) -> float:
     results = semantic_search(query, limit=3)
 
     text = " ".join(r.content.lower() for r in results)

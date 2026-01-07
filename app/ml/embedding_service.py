@@ -1,9 +1,10 @@
 import os
+from typing import List
 from openai import OpenAI
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-def generate_embedding(text: str) -> list[float]:
+def generate_embedding(text: str) -> List[float]:
     response = client.embeddings.create(
         model="text-embedding-3-small",
         input=text

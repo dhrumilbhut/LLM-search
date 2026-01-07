@@ -1,4 +1,5 @@
-def build_rag_prompt(query: str, documents: list[dict]) -> str:
+from typing import List
+def build_rag_prompt(query: str, documents: List[dict]) -> str:
     context = "\n\n".join(
         f"- {doc['title']}: {doc['content']}"
         for doc in documents
